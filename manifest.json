@@ -4,11 +4,13 @@
 	"description": "Redirect to Rebble documentation from outdated Pebble",
 	"version": "1.0",
 	"content_scripts": [{
-		"matches": ["https://developer.pebble.com/*"],
+		"matches": ["*://developer.pebble.com/*", "*://developer.getpebble.com/*"],
         "all_frames": true,
+        "run_at": "document_start",
 		"js": ["unlock_redirect.js"]
 	}],
 	"permissions": [
-		"activeTab"
+		"activeTab",
+        "tabs"
 	]
 }
