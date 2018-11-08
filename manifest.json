@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "pebbleredir",
+	"description": "Redirect to Rebble documentation from outdated Pebble",
+	"version": "1.0",
+	"content_scripts": [{
+		"matches": ["https://developer.pebble.com/*"],
+        "all_frames": true,
+		"js": ["unlock_redirect.js"]
+	}],
+	"permissions": [
+		"activeTab"
+	]
+}
