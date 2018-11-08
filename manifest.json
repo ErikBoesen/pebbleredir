@@ -9,8 +9,8 @@
         "run_at": "document_start",
 		"js": ["unlock_redirect.js"]
 	}],
-	"permissions": [
-		"activeTab",
-        "tabs"
-	]
+    "background": {
+        "scripts": ["background.js"]
+    },
+	"permissions": ["activeTab", "background"]
 }
