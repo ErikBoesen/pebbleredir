@@ -12,5 +12,5 @@
     "background": {
         "scripts": ["background.js"]
     },
-	"permissions": ["activeTab", "background"]
+	"permissions": ["activeTab", "background", "webNavigation"]
 }
