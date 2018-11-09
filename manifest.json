@@ -6,5 +6,5 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "permissions": ["background", "webRequest", "webRequestBlocking", "*://developer.pebble.com/*", "*://developer.getpebble.com/*"]
+    "permissions": ["webRequest", "webRequestBlocking", "*://developer.pebble.com/*", "*://developer.getpebble.com/*"]
 }
