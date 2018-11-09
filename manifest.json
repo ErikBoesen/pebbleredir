@@ -12,5 +12,5 @@
     "background": {
         "scripts": ["background.js"]
     },
-	"permissions": ["activeTab", "background", "tabs", "webNavigation"]
+	"permissions": ["activeTab", "background", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "*://developer.pebble.com/*", "*://developer.getpebble.com/*"]
 }
