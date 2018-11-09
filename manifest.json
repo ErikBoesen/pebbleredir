@@ -1,11 +1,10 @@
 {
-	"manifest_version": 2,
-	"name": "pebbleredir",
-	"description": "Redirect to Rebble documentation from outdated Pebble",
-	"version": "1.0",
+    "manifest_version": 2,
+    "name": "pebbleredir",
+    "description": "Redirect to Rebble documentation from outdated Pebble",
+    "version": "1.0",
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "scripts": ["background.js"]
     },
-	"permissions": ["activeTab", "background", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "*://developer.pebble.com/*", "*://developer.getpebble.com/*"]
+    "permissions": ["background", "webRequest", "webRequestBlocking", "*://developer.pebble.com/*", "*://developer.getpebble.com/*"]
 }
