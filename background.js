@@ -1,4 +1,6 @@
-chrome.webRequest.onBeforeRequest.addListener(function(frame) {
+const browser = window.browser || window.chrome;
+
+browser.webRequest.onBeforeRequest.addListener(function(frame) {
     console.log(frame);  // debug
     var split_url = frame.url.split('/');
     split_url.splice(2, 0, 'developer.rebble.io');
